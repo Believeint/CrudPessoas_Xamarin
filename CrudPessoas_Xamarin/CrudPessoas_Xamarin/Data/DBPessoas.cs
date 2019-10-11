@@ -32,7 +32,7 @@ namespace CrudPessoas_Xamarin.Data
         // Realiza um Insert do objeto no DB
         public int SalvarPessoa(Pessoa pessoa)
         {
-            return _db.Update(pessoa);
+            return _db.Insert(pessoa);
         }
 
         // Realiza um Delete do objeto no DB

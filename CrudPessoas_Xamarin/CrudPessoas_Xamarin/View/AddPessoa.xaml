@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CrudPessoas_Xamarin.View.AddPessoa">
+    <ContentPage.Content>
+        <TableView>
+            <TableRoot>
+                <TableSection>
+                    <EntryCell x:Name="entNom" Label="Nome"/>
+                    <EntryCell x:Name="entGen" Label="Gênero"/>
+                    <EntryCell x:Name="entDtN" Label="Data de Nascimento"/>
+                    <EntryCell x:Name="entCid" Label="Cidade"/>
+                    <EntryCell x:Name="entEst" Label="Estado"/>
+                    <EntryCell x:Name="entPais" Label="País"/>
+                    <ViewCell>
+                        <Button Text="Adicionar Pessoa" Clicked="Button_Clicked"/>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

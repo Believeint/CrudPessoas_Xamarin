@@ -5,6 +5,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="CrudPessoas_Xamarin.View.ViewPessoa">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <ListView x:Name="lvwPessoas">
             <ListView.ItemTemplate>
