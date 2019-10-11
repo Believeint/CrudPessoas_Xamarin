@@ -28,7 +28,7 @@ namespace CrudPessoas_Xamarin.View
             pessoa.Pais = entPais.Text;
 
             App.Db.SalvarPessoa(pessoa);
-            App.Current.MainPage = new NavigationPage(new ViewPessoa());
+            App.Current.MainPage = new NavigationPage(new ViewPessoa()); //
         }
     }
 }
