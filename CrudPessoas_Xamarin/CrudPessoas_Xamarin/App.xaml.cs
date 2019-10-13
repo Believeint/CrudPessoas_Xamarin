@@ -16,7 +16,7 @@ namespace CrudPessoas_Xamarin
             get {
                 if (db == null)
                 {
-                    db = new DBPessoas(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Pessoas.db3"));
+                    db = new DBPessoas(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Pessoas2.db3"));
                 }
                 return db;
             }

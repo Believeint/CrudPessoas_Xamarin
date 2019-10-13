@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CrudPessoas_Xamarin.View.EditPessoa" Title="Editar Pessoa">
+  <ContentPage.Content>
+        <TableView HasUnevenRows="True">
+            <TableRoot>
+                <TableSection>
+                    <EntryCell x:Name="entNom" Text="{Binding Nome}"/>
+                    <EntryCell x:Name="entGen" Text="{Binding Genero}"/>
+                    <!--<EntryCell x:Name="entDtN" Placeholder="Data de Nascimento"/>-->
+                    <ViewCell>
+                        <StackLayout Margin="15,0,0,0">
+                            <Label Text="Data de Nascimento"/>
+                            <DatePicker x:Name="dtpDtN" TextColor="Brown" Date="{Binding DataNascimento}"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <EntryCell x:Name="entCid" Text="{Binding Cidade}"/>
+                    <EntryCell x:Name="entEst" Text="{Binding Estado}"/>
+                    <EntryCell x:Name="entPais" Text="{Binding Pais}"/>
+                    <ViewCell>
+                        <Frame>
+                        <Button Text="Editar" BackgroundColor="DodgerBlue" Clicked="EditarPessoaClicked"/>
+                        </Frame>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
