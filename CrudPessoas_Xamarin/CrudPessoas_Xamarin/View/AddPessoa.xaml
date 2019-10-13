@@ -12,12 +12,12 @@
                     <EntryCell x:Name="entNom" Placeholder="Nome"/>
                     <EntryCell x:Name="entGen" Placeholder="Gênero"/>
                     <!--<EntryCell x:Name="entDtN" Placeholder="Data de Nascimento"/>-->
-                    <ViewCell>
-                        <StackLayout Margin="15,0,0,0">
-                        <Label Text="Data de Nascimento"/>
-                            <DatePicker x:Name="dtpDtN" BindingContext="{x:Reference dtpDtN}" TextColor="Brown" Date="{Binding Path=MaximumDate}" MinimumDate="1900/01/01" MaximumDate="2010/01/01"/>
-                        </StackLayout>
-                    </ViewCell
+                  <ViewCell>
+                    <StackLayout Margin="15,0,0,0">
+                      <Label Text="Data de Nascimento"/>
+                      <DatePicker x:Name="dtpDtN" BindingContext="{x:Reference dtpDtN}" TextColor="Brown" Date="{Binding Path=MaximumDate}" MinimumDate="1900/01/01" MaximumDate="2010/01/01"/>
+                    </StackLayout>
+                  </ViewCell>
                     <EntryCell x:Name="entCid" Placeholder="Cidade"/>
                     <EntryCell x:Name="entEst" Placeholder="Estado"/>
                     <EntryCell x:Name="entPais" Placeholder="País"/>
